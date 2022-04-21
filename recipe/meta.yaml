@@ -1,5 +1,5 @@
 {% set name = "stormevents" %}
-{% set version = "1.3.2.2" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/stormevents-{{ version }}.tar.gz
-  sha256: 0b7ea88e22ae1d72a2be3b49f00045eeb85671c5e92783a1bdbf72db76891bd5
+  sha256: 324fed1717988ec4a8fc4e9084fc3169d027ac8e3b4c61bcda104e93f35140c2
 
 build:
   noarch: python
@@ -18,10 +18,8 @@ build:
 
 requirements:
   host:
-    - dunamai
     - pip
     - python >=3.6
-    - setuptools >=41.2
   run:
     - beautifulsoup4
     - geopandas
